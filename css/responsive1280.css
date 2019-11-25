@@ -1,0 +1,114 @@
+/*faire le responsive avec les breakpoints max-width : 768px pour tablette et 576px*/
+/*---------------------------banniere---------------------------------------------------------*/
+#banniere
+{
+	height: 500px;
+	margin-top: 8%;
+	background-position: center;
+}
+#txtbanniere
+{
+	font-size: 0.8em;
+	top: 35%;
+	width: 50%;
+}
+.hrbanniere
+{
+	top: 98.5%;
+}
+/*--------------------------haut des sections -------------------------------------------------*/
+.osection
+{
+	margin-bottom: 3%;
+}
+.osection h2
+{
+	font-size: 1.5em;
+}
+#services p, #projet p
+{
+	font-size: 0.7em;
+}
+
+/* -----------------------Services-----------------------------------------------*/
+
+
+
+#unmserv img
+{
+	width: 100%;	
+}
+#deuxmserv
+{
+	width: 60%;
+	margin-top: 0;
+}
+#deuxmserv .icoserv
+{
+	height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+}
+#deuxmserv .icoserv + i
+{
+	top: 15px;
+}
+.droiteserv h3
+{
+	font-size: 1.1em;
+}
+
+
+/* ----------------------------------------------- Nos Projets ------------------------------------------------------- */
+
+/* bouton projet*/
+#projet button
+{
+	font-size: 0.9em;
+	height: 25px;
+	line-height: 25px;
+}
+
+#projet button:hover::after
+{
+	bottom: 17px;
+	font-size: 1.5em;
+}
+/*image projet*/
+
+#imgprojet
+{
+	margin-top: 0;
+}
+
+.bandeau
+{
+	top: 60%;
+}
+.bandeau i
+{
+	color: white;
+	background-color:#3491b2;
+	border : 1px solid white;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 5%;
+	bottom :72%;
+	font-size: 0.8em;
+
+}
+.bandeau p
+{
+	margin: 2px;
+    padding: 3px;
+}
+
+#map iframe
+{
+	height: 600px;
+}

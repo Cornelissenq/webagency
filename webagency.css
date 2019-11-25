@@ -1,0 +1,440 @@
+
+/* ---------------------------------Définition de la police roboto regular------------------------------------------------------- */
+
+@font-face 
+{ 
+
+    font-family: 'roboto-regular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face
+{
+  font-family: 'Font Awesome 5 Free';
+  src: url('https://use.fontawesome.com/releases/v5.0.6/css/all.css'); 
+}
+body
+{
+	font-family: roboto-regular;
+	width: 100%;
+	margin:0;
+	/*background:#f5f5f5;*/
+}
+strong
+{
+	font-weight: normal;
+}
+
+/* ----------------------------------------En-tête (logo+menu)----------------------------------------------------------------------*/
+
+#menu
+{
+	display: flex;	
+	position:fixed;
+	top: 0;
+	justify-content: space-around;
+	z-index: 10;
+	background-color: white;
+	width: 100%;
+}
+#logo
+{
+	width: 30%;
+}
+
+#menu img
+{
+	padding: 2%;
+	display: flex;
+}
+nav
+{
+
+}
+nav ul
+{
+	display: flex;
+	list-style-type:none;
+}
+
+nav li
+{
+	padding:10px 20px;
+
+}
+nav a
+{
+	text-decoration: none;
+	color:gray;
+}
+nav a:hover
+{
+	border-top: 2px solid #3491b2;
+	color: black;
+	padding-top: 15px;
+}
+
+/*----------------------------------------banniere-----------------------------------------------*/
+
+#banniere
+{
+	position: relative;
+	margin-top: 4%;
+	width: 100%;
+	height: 650px;
+	background:url("images/slider/bg1.jpg")no-repeat;
+	background-size: cover;
+}
+/*--fausse barre de défilement*/
+.hrbanniere
+{
+	height: 8px;
+	position: absolute;
+	top:99%;
+	border: 0;
+	margin:0;
+}
+#hrun
+{
+	
+	background:#5cadd3 left ;
+	width: 20%;
+}
+#hrdeux
+{
+	background: rgba(38,38,38,0.5);
+	width: 80%;
+	left: 20%;
+}
+/*---------------------------------Texte Bannière --------------------------------------------*/
+
+#txtbanniere
+{
+	color:white;
+	position: relative;
+	left: 15%;
+	top: 40%;
+	width: 35%;
+}
+
+#bleu
+{
+	color: #3491b2;
+}
+.bouton
+{
+	color:white;
+	background-color: #5cadd3;
+	border:none;
+	border-bottom: #4682B4 3px solid;
+	padding: 10px 20px;
+	font-size: 1.1em;
+	border-radius: 7%;
+
+}
+
+/*------------------------------------Fleche bannière------------------------------------------------*/
+
+.fbanniere
+{
+	z-index: 5;
+	position: absolute;
+	top: 43%;
+	font-size: 1.8em;
+	color: white;
+	padding: 0.7%;
+	background:rgba(38,38,38,0.5);
+}
+#fgauche
+{
+	left:0%;	
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+
+#fdroite
+{
+	right:0%;
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+}
+
+
+/*----------------------------------Partie haute section (service + projet) --------------------------------*/
+
+section
+{
+	padding: 4% 0%;
+}
+
+.osection
+{
+	text-align: center;
+	margin-bottom: 5%;
+}
+.osection h2
+{
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.osection hr
+{
+	width: 20%;
+	border:1px solid #64686d;
+}
+
+.osection i
+{
+	border-radius: 50%;
+	background: white;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	top: -25px;
+	color:#3491b2;
+}
+
+/*-------------------------------------Nos Services----------------------------------------------*/
+
+#services p, .osection p
+{
+	color: #64686d;
+	font-size: 0.9em;
+	margin-top: -10px;
+}
+#services i
+{
+	font-size: 0.9em;
+	color:#3491b2;
+}
+
+
+
+/*--Texte+image Services--*/
+#mserv
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+#deuxmserv
+{
+	margin-top: 5%;
+	width: 35%;
+}
+#UX,#UI,#SEO
+{
+	display: flex;
+}
+
+.gaucheserv .icoserv
+{
+	font-size: 2em;
+	text-align: center;
+	line-height: 70px;
+	border: 1px solid silver;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+#deuxmserv .icoserv + i
+{
+	position: relative;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	border-radius: 50%;
+	background:white;
+	left: -8px;
+	top: 23px;
+
+}
+.gaucheserv
+{
+	display: flex;
+	margin-top: 3%;
+}
+
+.droiteserv h3
+{
+	font-weight: bold;
+
+}
+
+/* ----------------------------------------------- Nos Projets ------------------------------------------------------- */
+#projet
+{
+	background:#f5f5f5;
+}
+
+#boutonprojet
+{
+	display: flex;
+	justify-content: center;	
+}
+
+/* bouton projet*/
+#projet button
+{
+	font-size: 1.1em;
+	text-decoration: none;
+	color: grey;
+	height: 40px;
+	line-height: 40px;
+	background-color: #e5e5e5;
+	border:0;
+}
+#projet button::after
+{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f0dd";
+	display: none;
+}
+
+#projet button:hover
+{
+	background-color: #5cadd3;
+	color: white;
+	border-bottom: 3px solid #468cad;
+	outline: none;
+}
+#projet button:hover::after
+{
+	display: block;
+	position: relative;
+	bottom: 25px;
+	font-size: 1.8em;
+	color:#468cad;
+}
+#bgprojet
+{
+	border-top-left-radius: 7%;
+	border-bottom-left-radius: 7%;
+}
+#bdprojet
+{
+	border-top-right-radius: 7%;
+	border-bottom-right-radius: 7%;
+}
+/*image projet*/
+
+#imgprojet
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.imageprojet
+{
+	width: 23%;
+	margin-top: 1%;
+	position: relative;	
+}
+
+#imgprojet img
+{
+	width: 100%;
+	display: flex;
+}
+.bandeau
+{
+	display: none;
+	position : absolute;
+	bottom: 0%;
+	width: 95%;
+	padding-left:5%;
+	color: white;
+	background: rgba(0,0,0,0.6);
+}
+.bandeau i
+{
+	color: white;
+	background-color:#3491b2;
+	border : 1px solid white;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 5%;
+	bottom :82%;
+	font-size: 0.8em;
+
+}
+.bandeau p
+{
+	margin: 5px;
+	padding: 5px;
+}
+.bandeau p strong
+{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.imageprojet:hover .bandeau
+{
+	display: block;
+}
+/*--------------------------------------------CONTACT--------------------------------------------------------------------*/
+
+#contact
+{
+	position: relative;
+}
+#map
+{
+	background: #3491b2;
+}
+#map iframe
+{
+	width: 100%;
+	height: 700px;	
+	border:0px;
+	opacity: 0.7;
+	display : flex;
+}
+
+/*----------------------------Formulaire---------------------*/
+
+#contact #formulaire
+{
+	width: 20%;
+	z-index: 2;
+	position: absolute;
+	top:18%;
+	right: 10%;
+	background: rgba(245,245,245,0.8);
+}
+
+#formulaire p,#formulaire h3
+{
+	margin : 0% 5%;
+	padding-top: 2%;
+}
+
+#formulaire p input,#formulaire textarea
+{
+	width: 98%;
+	margin-top: 3%;
+	padding: 1.5%;
+	border-radius: 6%;
+	border: 1px solid #64686d;
+}
+
+#formulaire button
+{
+	
+	font-weight: bold;
+	font-size: 0.8em;
+	margin: 5%; 
+	
+}
